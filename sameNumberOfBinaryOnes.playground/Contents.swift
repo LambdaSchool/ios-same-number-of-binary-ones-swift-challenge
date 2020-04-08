@@ -1,6 +1,10 @@
 import UIKit
 
-
+func sameNumberOfBinaryOnes(number: Int) -> (Int, Int?) {
+    
+    
+    return () 
+}
 
 
 
