@@ -11,7 +11,7 @@ func sameNumberOfBinaryOnes(number: Int) -> (nextHighest: Int?, nextLowest: Int?
     var nextHighest: Int? = nil
     var nextLowest: Int? = nil
 
-    for i in number + 1 ... Int.max {
+    for i in number + 1 ... Int.max { // Loop from number + 1 to exclude the number 
         if numberOfOnes(in: i) == targetOnes {
             nextHighest = i
             break
@@ -30,10 +30,6 @@ func sameNumberOfBinaryOnes(number: Int) -> (nextHighest: Int?, nextLowest: Int?
 
 sameNumberOfBinaryOnes(number: 3)
 sameNumberOfBinaryOnes(number: 42)
-
-for i in (0 ... 42).reversed() {
-    print(i )
-}
 
 
 // Test Cases
